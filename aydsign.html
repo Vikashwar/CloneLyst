@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Mednear</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="loginPage.css">
+    
+</head>
+
+<body>
+   
+    <div class="sign-container">
+        <div class="sign-container-div">
+            <div id="sign-img">
+               
+            </div>
+        </div>
+        <div class="sign-container-div">
+            <div id="sign-form-div">
+                <form action="">
+                    <h4>Sign Up</h4>
+                    <!-- <p>Signup now & refer to get Rs.50 MNCASH. We don’t share your personal details with anyone.</p> -->
+                    <input class="linp" id="user" type="text" placeholder="Name"><br><br>
+                    <input class="linp" id="mobile" type="number" placeholder="Mobile Number"><br><br>
+                    <input class="linp" id="email" type="email" placeholder="Email Address *"><br><br>
+                    <input class="linp" id="pass" type="password" placeholder="Set Password"><br><br>
+                    <input class="linp" type="password" placeholder="Confirm Password"><br><br>
+                    <p>By signing up, you agree to our <a href="terms and condition">Terms and Conditions</a></p>
+                    <button class="loginb" id="signbutton">SIGNUP</button>
+                    <p>Existing User?<a href="sign.html">Login</a></p>
+                    <button class="loginb" id="sign.html">EXIT</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("signbutton").addEventListener("click", signUp);
+    var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+    function signUp(e) {
+        e.preventDefault()
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        var user = document.getElementById("user").value;
+        var mobile = document.getElementById("mobile").value;
+
+        var userCredentials = {
+            emailAddress: email,
+            passWord: pass,
+            userName: user,
+            mobileNo: mobile,
+        };
+        userArr.push(userCredentials);
+        localStorage.setItem("userData", JSON.stringify(userArr));
+
+        window.location.href = "signin2.html";
+        window.location.href = "signin2.html";
+    }
+
+    
+        
+
+</script>

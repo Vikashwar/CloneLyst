@@ -1,0 +1,1190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lyst</title>
+    <style>
+        .navbar{
+            /* background-color: rgb(160, 154, 154); */
+
+        }
+        .navbar ul{
+           overflow: auto;
+        }
+        .navbar li{
+            float: right;
+            list-style: none;
+            margin: 10px 10px;
+
+        }
+        .navbar li a{
+             padding: 5px 5px;
+             text-decoration: none;
+        }
+        #btn{
+            background-color: black;
+            color: #fff;
+            border: none;
+            height: 20px;
+            width: 40px;
+        }
+        #header{
+            height: 55px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: row;
+            /* background-color: black; */
+            justify-content: space-between;
+        }
+
+        #header >div{
+            /* border: 1px solid red; */
+        }
+        #img{
+            margin-left: 30px;
+            height: 80px;
+            width: 100px;
+        }
+        #search_inp{
+            height: 40px;
+            width: 1210px;
+            /* background-color: gray; */
+            border: 1px solid black
+            border: radius 4px;
+        }
+        .menwomen{
+            text-decoration: none;
+            color: black;
+
+        }
+        #slider{
+            height: 500px;
+            width: 100%;
+            border: 1px solid black;
+            animation: slider 6s infinite linear;
+            background-size: 100% 100%;
+        }
+
+        @keyframes slider{
+            0%{
+                background-image: url("https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236.jpg");
+            }
+
+            /* image1 */
+            35%{
+                background-image: url("https://cdna.lystit.com/cms/HP_desktop_xl_2800x1050_4ec5e17491.jpg");
+            }
+            /* image2 */
+            75%{
+                background-image: url("https://cdna.lystit.com/cms/YIF_21_Homepage_Banners_Desktop_XL_9e892b9ce2.png");
+            }
+        }
+
+
+        #b_img{
+            height: 490px;
+            width: 100%;
+        }
+        #container{
+            width: 100%;
+            height: 300px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container>div{
+            width: 20%;
+            height: 220px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        p.a {
+        width: 130px;
+        height: 80px;
+        /* background-color: yellow; */
+        -ms-transform: rotate(10deg); /* IE 9 */
+        transform: rotate(270deg);
+      }
+      #container2{
+            width: 150%;
+            height: 350px;
+            /* border: 1px solid red; */
+            display: flex;
+            /* flex-wrap: wrap; */
+            margin-top: 20px;
+        }
+        #container2>div{
+            width:300px;
+            height: 280px;
+
+            /* border: 1px solid black; */
+            
+            
+        }
+        
+       
+      #container2>div>div{
+            width: 100%;
+            height: 20%;
+            /* border: 1px solid black; */
+         }
+         #container3{
+            width: 150%;
+            height: 900px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        #container3>div{
+            width: 9%;
+            height: 240px;
+            margin-bottom: 1px;
+
+            /* border: 1px solid black; */
+            
+            
+        }
+        
+       
+      #container3>div>div{
+            width: 100%;
+            height: 20%;
+            /* border: 1px solid black; */
+         }
+         .footcontainer{
+        /* border: 1px solid red; */
+        margin:auto;
+        background-color: rgba(212, 207, 207, 0.925);
+        
+    }
+    .footer-col{
+	display: flex;
+    /* border: 1px solid black; */
+    margin-left: 150px;
+    color: black;
+    margin-left: 220px;
+    
+
+    }
+    li{
+      list-style: none;
+    }
+    a{
+      color: black;
+    }
+    @media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+@media screen and (min-width: 480px){
+  .footer-col{
+    width: 20%;
+    margin-bottom: 30px;
+    }
+  }
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    
+    </style>
+</head>
+<body>
+   <header>
+       <nav class="navbar"> 
+           <ul>
+               <li><a href="https://www.lyst.com/account/register/?next=%2F"> <button id = "btn"> Join</button></a></li>
+             
+               <li><a href="signup.html">Sign In</a></li>
+               <li><a href="#"> <select name="" id="">
+                   <option value="Help" disabled>Help</option>
+                   <option value="Help Center"> <u>Help Center </u> </option>
+                   <option value="Contect us">Contect us</option>
+                   <option value="About">About us</option>
+                   <option value="career">Career</option>
+               </select></a></li>
+
+               <li><a href="#">INR-$USS</a></li>
+           </ul>
+       </nav>
+   </header> 
+ <!-- the above code is for navbar  -->
+
+ <div id ="header">
+<img  id = "img" src="https://image.pitchbook.com/Tq0M0amvCYmFNydxS6YUc21TkhL1620781972903_200x200" alt="">
+
+<div><a class= "menwomen" href="women.html"><h4>WOMEN</h4></a></div>
+<div><a  class= "menwomen" href="shoe.html"><h4>MEN</h4></a></div>
+<div><input type="text" name="" id="search_inp" placeholder="Search here"></div>
+ </div>
+<hr>
+
+
+<div id = "slider">
+
+</div>
+
+
+<!-- the above code is till slider  -->
+
+<div id="container">
+    <p class="a">Hello World!</p>
+    <br>
+    <div>
+        
+        <img class="img2"
+        height="100%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+        
+    </div>
+    <div>
+        <img class="img2"
+        height="100%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+    </div>
+    <div>
+        <img class="img2"
+        height="100%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+    </div>
+    
+</div>
+<!-- <h2>transform: rotate(20deg):</h2> -->
+
+
+<div id="container2" style="width: 200vh; border: 0px solid;overflow-x: auto;" >
+        
+    <div>
+        
+        <img 
+        height="80%"
+    
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+        <div><p class="a"><h3><a href="men.html">THE YEAR IN FASHION 2021</a></h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+       
+        src="https://cdna.lystit.com/cms/Image_from_i_OS_241_1_4d597fc453.png" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+    
+        src="https://cdna.lystit.com/cms/MODERN_MINIMALISM_2_12_21_1f7b7e0e3c.jpeg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+      
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+      
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    
+</div>
+. <div id="container2" style="width: 200vh; border: 0px solid;overflow-x: auto;" >
+    
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Image_from_i_OS_241_1_4d597fc453.png" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/MODERN_MINIMALISM_2_12_21_1f7b7e0e3c.jpeg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Image_from_i_OS_241_1_4d597fc453.png" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/MODERN_MINIMALISM_2_12_21_1f7b7e0e3c.jpeg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="70%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="70%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="70%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        
+        <img 
+        height="80%"
+    
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+       
+        src="https://cdna.lystit.com/cms/Image_from_i_OS_241_1_4d597fc453.png" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+    
+        src="https://cdna.lystit.com/cms/MODERN_MINIMALISM_2_12_21_1f7b7e0e3c.jpeg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+      
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+      
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    
+</div>
+. <div id="container2" style="width: 200vh; border: 0px solid;overflow-x: auto;" >
+    
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Image_from_i_OS_241_1_4d597fc453.png" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/MODERN_MINIMALISM_2_12_21_1f7b7e0e3c.jpeg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Asset_for_Homepage_bcfa75b345.jpg" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Image_from_i_OS_241_1_4d597fc453.png" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/MODERN_MINIMALISM_2_12_21_1f7b7e0e3c.jpeg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Hunter_Toplyst_1st_position_Tuesday_Onwards_89e7d69530.jpg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/egm0p_F2_A_a081ffa452.jpeg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="70%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/CLEAN_LINES_25_11_21_5668e690f6.jpeg" alt="">
+        <div><p class="a"><h3>CLEAN LINES</h3></p></div>
+    </div>
+    <div>
+        
+        <img 
+        height="70%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/24_S_600x600_HP_Hot_Lyst_Holiday_gifting_cdcb149f3b.png" alt="">
+        <div><p class="a"><h3>THE YEAR IN FASHION 2021</h3></p></div>
+    </div>
+ 
+    <div>
+        <img 
+        height="70%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/2_APP_PLACEMENT_600_X600_49189738ca.jpg" alt="">
+        <div><p class="a"><h3>BEST FOOT FORWARD</h3></p></div>
+    </div>
+    
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    <div>
+        <img 
+        height="80%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Emporio_Armani_Glowtown_Mobile_aac5b08a16.jpg" alt="">
+        <div><p class="a"><h3>MODERN MINIMALISM</h3></p></div>
+    </div>
+   
+    <div>
+        <img 
+        height="90%"
+        width="100%"
+        src="https://cdna.lystit.com/cms/Acne_Studios_AS_SS_22_Lyst_Wmns_Detail_01_600x600_63f5200b7f.jpg" alt="">
+        <div><p class="a"><h3>REFINED GLAMOUR</h3></p></div>
+    </div>
+    
+    
+</div>
+    
+
+<!-- footer=-------------------------------- -->
+
+<footer class="footer">
+    <div class="footcontainer">
+        <div class="row">
+         <div class="footer-col">
+             
+             <div class="social-links">
+                 <li><a href="#"><h4>TrustPilot</h4></a></li>
+                 <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+                 <!-- <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+             </div>
+            <div class="footer-col">
+                
+                <ul>
+                 
+                    .  <li><a href="women.html"><h4>Women</h4></a></li>
+                    <li><a href="shoe.html">Ankle boots</a></li>
+                     <li><a href="pro.html">Cocktail dresses</a></li>
+                     <li><a href="footer.html">Gowns</a></li>
+                     <li><a href="cont2.html">Leather jackets</a></li>
+                     <li><a href="https://www.lyst.com/shop/maxi-dresses/">Maxi and long dresses</a></li>
+                     <li><a href="shoe.html">Skinny jeans</a></li>
+                     <li><a href="#">Sweaters and pullovers</a></li>
+                     <li><a href="#">View help</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                
+                <ul>
+                 <li><a href="men.html"><h4>Men</h4></a></li>
+                 <li><a href="shoe.html">Leather jackets </a></li>
+                 <li><a href="pro.html"> Oxfords</a></li>
+                 <li><a href="cont2.html">Polo shirts</a></li>
+                 <li><a href="footer.html"> Raincoats and trench coats</a></li>
+                 <li><a href="#"> Loafers</a></li>
+                 <li><a href="#">High-top sneakers</a></li>
+                 
+                </ul>
+            </div>
+            <div class="footer-col">
+                
+                <ul>
+                 <li><a href="lyst.html"><h4>Help And Info</h4></a></li>
+                 <li><a href="about.html"> About us</a></li>
+                 <li><a href="#">Shipping policy</a></li>
+                 <li><a href="#">Returns policy</a></li>
+                     <li><a href="#">Payments</a></li>
+                 <li><a href="#">Refund policy</a></li>
+                 <li><a href="#">Developers</a></li>
+                 <li><a href="#">Careers</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><a href="#">Terms & conditions</a></li>
+                 <li><a href="#">Privacy & cookie policy</a></li>
+                 <li><a href="#"> Intellectual property</a></li>
+                 <li><a href="#">Categories</a></li>
+                 <li><a href="#"> Lyst Insights</a></li> 
+                </ul>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

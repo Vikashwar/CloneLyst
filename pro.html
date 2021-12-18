@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lyst</title>
+    <style>
+        .navbar{
+            /* background-color: rgb(160, 154, 154); */
+
+        }
+        .navbar ul{
+           overflow: auto;
+        }
+        .navbar li{
+            float: right;
+            list-style: none;
+            margin: 10px 10px;
+
+        }
+        .navbar li a{
+             padding: 5px 5px;
+             text-decoration: none;
+        }
+        #btn{
+            background-color: black;
+            color: #fff;
+            border: none;
+            height: 20px;
+            width: 40px;
+        }
+        #header{
+            height: 55px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: row;
+            /* background-color: black; */
+            justify-content: space-between;
+        }
+
+        #header >div{
+            /* border: 1px solid red; */
+        }
+        #img{
+            margin-left: 30px;
+            height: 80px;
+            width: 100px;
+        }
+        #search_inp{
+            height: 40px;
+            width: 1210px;
+            /* background-color: gray; */
+            border: 1px solid black
+            border-radius: 4px;
+        }
+        .menwomen{
+            text-decoration: none;
+            color: black;
+
+        }
+        #slider{
+            height: 500px;
+            width: 100%;
+            border: 1px solid black;
+            animation: slider 6s infinite linear;
+            background-size: 100% 100%;
+        }
+
+        @keyframes slider{
+            0%{
+                background-image: url("https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236.jpg");
+            }
+
+            /* image1 */
+            35%{
+                background-image: url("https://cdna.lystit.com/cms/HP_desktop_xl_2800x1050_4ec5e17491.jpg");
+            }
+            /* image2 */
+            75%{
+                background-image: url("https://cdna.lystit.com/cms/YIF_21_Homepage_Banners_Desktop_XL_9e892b9ce2.png");
+            }
+        }
+
+
+        #b_img{
+            height: 490px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <header>
+       <nav class="navbar"> 
+           <ul>
+               <li><a href="https://www.lyst.com/account/register/?next=%2F"> <button id = "btn"> Join</button></a></li>
+             
+               <li><a href="#">Sign In</a></li>
+               <li><a href="#"> <select name="" id="">
+                   <option value="Help" disabled>Help</option>
+                   <option value="Help Center"> <u>Help Center </u> </option>
+                   <option value="Contect us">Contect us</option>
+                   <option value="About">About us</option>
+                   <option value="career">Career</option>
+               </select></a></li>
+
+               <li><a href="#">INR-$USS</a></li>
+           </ul>
+       </nav>
+   </header> 
+ <!-- the above code is for navbar  -->
+
+ <div id ="header">
+<img  id = "img" src="https://image.pitchbook.com/Tq0M0amvCYmFNydxS6YUc21TkhL1620781972903_200x200" alt="">
+
+<div><a class= "menwomen" href="WOMEN"><h4>WOMEN</h4></a></div>
+<div><a  class= "menwomen" href="Men.html"><h4>MEN</h4></a></div>
+<div><input type="text" name="" id="search_inp" placeholder="Search here"></div>
+ </div>
+<hr>
+
+
+<div id = "slider">
+
+</div>
+
+
+<!-- the above code is till slider  -->
+
+
+
+
+
+
+
+</body>
+</html>
